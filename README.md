@@ -1,4 +1,4 @@
-# Day 87 - Cafe and Wifi Website
+# Cafe and Wifi Website
 ## Concepts Practised
 - Creating Forms with Flask-WTF
 - Adding Validation to Forms with Flask-WTF
