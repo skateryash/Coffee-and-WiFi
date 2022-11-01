@@ -1,5 +1,5 @@
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, SelectField
+from flask_wtf import FlaskForm  # pip install Flask-WTF
+from wtforms import StringField, SubmitField, SelectField  # pip install WTForms
 from wtforms.validators import DataRequired, URL
 
 choices = ['✅', '❌']

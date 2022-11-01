@@ -1,15 +1,20 @@
-from flask import Flask, render_template, url_for, redirect, request
-from flask_sqlalchemy import SQLAlchemy
-from flask_bootstrap import Bootstrap
+from flask import Flask, render_template, url_for, redirect, request  # pip install Flask
+from flask_sqlalchemy import SQLAlchemy  # pip install -U Flask-SQLAlchemy
+from flask_bootstrap import Bootstrap  # pip install Flask-Bootstrap
 from random import choice
 from forms import Search, Add, Update
 import os
+from dotenv import load_dotenv
+
+load_dotenv('./.env')
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY") #'8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
+app.config['SECRET_KEY'] = os.environ.get(
+    "SECRET_KEY")  # '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 Bootstrap(app)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("POSTGRES_DATABASE")  #'sqlite:///cafes.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
+    "POSTGRES_DATABASE")  # 'sqlite:///cafes.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
