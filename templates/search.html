@@ -32,8 +32,8 @@
                 <tr>
                     <td>{{ cafe.id }}</td>
                     <td>{{ cafe.name }}</td>
-                    <td><a href="{{ cafe.map_url }}">Maps Link</a></td>
-                    <td><a href="{{ cafe.img_url }}">Image Link</a></td>
+                    <td><a href="{{ cafe.map_url }}" target="_blank">Maps Link</a></td>
+                    <td><a href="{{ cafe.img_url }}" target="_blank">Image Link</a></td>
                     <td>{{ cafe.location }}</td>
                     <td>{{ '✅' if cafe.has_sockets else '❌'}}</td>
                     <td>{{ '✅' if cafe.has_toilet else '❌' }}</td>
