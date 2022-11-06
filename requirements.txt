@@ -12,6 +12,7 @@ Jinja2==3.1.2
 MarkupSafe==2.1.1
 pycodestyle==2.9.1
 python-dotenv==0.21.0
+psycopg2==2.9
 SQLAlchemy==1.4.42
 tomli==2.0.1
 visitor==0.1.3
